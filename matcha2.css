@@ -6,7 +6,7 @@ body {
   .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 50px;
     background-color: #f1f1f1;
     position:fixed;
     height: 500%;
@@ -31,7 +31,12 @@ body {
   }
   
   div.content {
-    margin-left: 200px;
+    margin-left: 50px;
+    padding: 1px 16px;
+  }
+
+  div.contentbox {
+    margin-left: 50px;
     padding: 1px 16px;
   }
   
@@ -39,31 +44,37 @@ body {
   
  .vertical-rl {
      writing-mode: vertical-rl;
+     transform: rotate(180deg);
     }
 
+
+
+
+
     .footer {
-        position: fixed;
-        left: 200px;
+        position:static;
+        left: 50px;
         bottom: 0;
         width: 100%;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         text-align: center;
       }
 
 
 /* Top nav bar */
 nav {
-    background-color: rgb(6, 6, 6);
+    background-color: white;
     display: flex;
     justify-content: center;
     padding: 10px;
     position: sticky;
     top: 0;
+    justify-content: space-between;
     }
   
   nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 12px 20px;
     margin: 0 10px;
@@ -148,12 +159,24 @@ nav {
     }
   
      
+    .contentbox {
+  
+        min-height: 1vh;
+        text-align: center;
+        background-image: url("back.jpg");
+        background-repeat: cover;
+        background-size: 100% 100%;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        }
+
    .content {
   
    min-height: 1vh;
    text-align: center;
-   background-image: url("img/background.jpg");
-   background-repeat: no-repeat;
+   background-image: url("back.jpg");
+   background-repeat: cover;
    background-size: 100% 100%;
    padding: auto;
    }
@@ -198,7 +221,7 @@ nav {
   
    
   
-     .card {
+     .cardbox {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       max-width: 300px;
       margin: auto;
