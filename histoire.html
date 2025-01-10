@@ -3,72 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histoire - Matcha Tea</title>
-    <link rel="stylesheet" href="matcha1.css"> <!-- Fichier CSS -->
+    <title>Matcha Tea - Histoire</title>
+    <link rel="stylesheet" href="matcha1.css"> 
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="vente.html">Vente</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="histoire.html">Histoire</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="compte.html">Compte client</a></li>
-            </ul>
-        </nav>
-        <h1>Notre Histoire</h1>
-    </header>
+<body class="page">
+    <nav>
+        <div class="nav-gauche">
+            <img src="image/panier-removebg-preview.png" alt="Icône panier" class="nav-icon">
+        </div>
+        <div class="nav-centre">
+            <span class="nom-site">MatchaTea</span>
+        </div>
+        <div class="nav-droite">
+            <img src="image/utilisateur.png" alt="Icône utilisateur" class="nav-icon">
+        </div>
+    </nav>
 
-    <main>
-        <!-- L'aventure de Matcha Tea -->
-        <section id="aventure">
-            <h2>L'aventure de Matcha Tea</h2>
-            <p>Chez Matcha Tea, nous croyons fermement que chaque personne mérite de goûter au plaisir authentique du thé matcha en provenance du Japon...</p>
-        </section>
+    <div class="conteneur">
+        <div class="barre-laterale">
+            <a href="#">Vente</a>
+            <a href="#">Histoire</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+            <a href="#">Compte</a>
+        </div>
+        <div class="contenu">
+            <h1>Notre Histoire</h1>
+            <section id="aventure">
+                <h2>L'aventure de Matcha Tea</h2>
+                <p>Chez Matcha Tea, nous croyons fermement que chaque personne mérite de goûter
+                 au plaisir authentique du thé matcha en provenance du Japon. Le thé matcha est considéré comme un
+                superaliment. Cette poudre d’un vert électrique, est riche en bons nutriments et
+                particulièrement en antioxydants et vitamines A, C et E. Nous sommes une entreprise
+                passionnée et spécialisée dans la confection de délicieux thés matcha. Que ce soit le goût
+                naturel du matcha en passant par le matcha goût vanille ou encore celui à la fraise, notre
+                entreprise locale travaille à confectionner sur mesure ses petites merveilles.
+                </p>
+            </section>
+            <section id="description">
+                <h2>MatchaTea garantit sans pesticides</h2>
+                <p>Matcha Tea ne fait aucune concession sur la qualité et l’origine de son thé matcha. Chaque
+                    étape de production est exclusivement réalisée au Japon : le matcha, les arômes et le
+                    conditionnement. Chaque production est testée qui garantit une absence totale de présence
+                    de pesticides dans nos produits.
+                </p>
+            </section>
+        </div>
+    </div>
 
-        <!-- À propos de Matcha Tea -->
-        <section id="description">
-            <h2>À propos de Matcha Tea</h2>
-            <p>Nous sommes une équipe passionnée par l’art de la préparation du thé matcha. Nos produits sont fabriqués avec soin au Japon, sans pesticides...</p>
-        </section>
-
-        <!-- Nos valeurs -->
-        <section id="valeurs">
-            <h2>Nos valeurs</h2>
-            <ul>
-                <li><strong>Qualité irréprochable</strong></li>
-                <li><strong>Respect de l'environnement</strong></li>
-                <li><strong>Éthique et transparence</strong></li>
-                <li><strong>Satisfaction client</strong></li>
-            </ul>
-        </section>
-
-        <!-- Pourquoi choisir le thé matcha ? -->
-        <section id="bienfaits">
-            <h2>Pourquoi choisir le thé matcha ?</h2>
-            <ul>
-                <li><strong>Énergie douce</strong></li>
-                <li><strong>Antistress et relaxant</strong></li>
-                <li><strong>Bienfaits pour la santé</strong></li>
-                <li><strong>Amélioration des performances</strong></li>
-            </ul>
-        </section>
-
-        <!-- Nos services -->
-        <section id="services">
-            <h2>Nos services</h2>
-            <ul>
-                <li><strong>Vente de thé matcha</strong></li>
-                <li><strong>Vente d'accessoires matcha</strong></li>
-            </ul>
-        </section>
-    </main>
+    <section id="valeurs">
+        <h2>Nos Valeurs</h2>
+        <div class="box">
+            <h3>Qualité</h3>
+            <p>Nous nous engageons à offrir des produits de qualité supérieure, issus du meilleur thé matcha japonais.</p>
+        </div>
+        <div class="box">
+            <h3>Authenticité</h3>
+            <p>Nous respectons la tradition et les méthodes de production authentiques du matcha.</p>
+        </div>
+        <div class="box">
+            <h3>Durabilité</h3>
+            <p>Nous choisissons des pratiques durables pour préserver l'environnement et soutenir les producteurs locaux.</p>
+        </div>
+    </section>
+    
+    <section id="bienfaits">
+        <h2>Les Bienfaits du Matcha</h2>
+        <div class="box">
+            <h3>Antioxydants</h3>
+            <p>Le matcha est une source riche d'antioxydants, contribuant à lutter contre les radicaux libres.</p>
+        </div>
+        <div class="box">
+            <h3>Énergie naturelle</h3>
+            <p>Le matcha offre une énergie stable sans les pics et chutes associés à d'autres stimulants.</p>
+        </div>
+        <div class="box">
+            <h3>Concentration</h3>
+            <p>Le matcha améliore la concentration et aide à maintenir la clarté mentale.</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="box">
+            <h3>Livraison rapide</h3>
+            <p>Nous offrons une livraison rapide pour que vous puissiez profiter de nos produits en toute tranquillité.</p>
+        </div>
+        <div class="box">
+            <h3>Produits sur mesure</h3>
+            <p>Nous proposons des produits personnalisés selon vos goûts et préférences.</p>
+        </div>
+        <div class="box">
+            <h3>Support client</h3>
+            <p>Notre équipe est toujours disponible pour répondre à toutes vos questions.</p>
+        </div>
+    </section>    
 
     <footer>
+        <p><a href="#">Lien 1</a> | <a href="#">Lien 2</a> | <a href="#">Lien 3</a></p>
         <p>&copy; 2025 Matcha Tea. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
+
 
