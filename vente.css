@@ -14,6 +14,7 @@
     --link-hover-color: #007BFF;
     --footer-link-color: #007BFF;
 }
+
 @font-face {
     font-family: 'Alice';
     src: url('fonts/alice.woff2') format('woff2'),
@@ -42,7 +43,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #80ed99;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -59,7 +60,14 @@ nav {
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
     }
-  
+  nav p {
+    font-size: 1.9rem; 
+    font-family: 'Alice', serif;
+    margin: 0; 
+    text-align: center; 
+    flex-grow: 1;
+ }
+
   nav img {
     width: 50px;
     height: 50px;
@@ -77,6 +85,11 @@ nav {
 
 .conteneur {
     display: flex;
+}
+p {
+    font-size: 1.3rem; /* Taille augmentée (ajustez selon vos besoins) */
+    line-height: 1.5; /* Améliore la lisibilité */
+    margin-left: -120px;
 }
 
 /* Début de la sidebar*/  
@@ -128,6 +141,10 @@ nav {
   
 
 .products-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 200px;
     padding: 20px;
     text-align: center;
@@ -137,6 +154,7 @@ nav {
 .products-section h2 {
     color: var(--primary-color);
     margin-bottom: 20px;
+    margin-left: -150px;
 }
 
 .products-section p {
@@ -149,7 +167,9 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
+    margin-left: -120px;
 }
 
 .product {
@@ -378,6 +398,10 @@ footer {
   }
 
   nav img {
+    width: 50%;
+    height: 50%;
+  }
+}
     width: 50%;
     height: 50%;
   }
