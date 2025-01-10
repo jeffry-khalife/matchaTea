@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(image/thé.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+}
+
+/* Style pour la barre de navigation */
+nav {
+    background-color: #054a29;
+    color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-icon {
+    width: 40px;  
+    height: 40px;
+    transition: width 0.3s ease, height 0.3s ease;  
+}
+
+nav .nom-site {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.conteneur {
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+.barre-laterale {
+    background-color: #3fa34d;
+    width: 180px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 80px; 
+    left: 0;
+    height: calc(100vh - 80px);  
+    z-index: 10;
+}
+
+.barre-laterale a {
+    writing-mode: vertical-rl;
+    text-align: center;
+    transform: rotate(180deg);
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.barre-laterale a:hover {
+    color: #5bba6f;
+}
+
+.contenu {
+    margin-left: 180px;
+    padding: 20px;
+    margin-bottom: 120px;
+    flex: 1;
+    z-index: 5;
+}
+
+h1, h2, h3 {
+    color: #5bba6f;
+    text-align: center;
+    margin: 20px 0;
+}
+
+section {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+section#valeurs, section#bienfaits, section#services {
+    margin: 40px auto;
+    max-width: 1000px; 
+    display: block;  
+    text-align: center;
+}
+
+section#valeurs h2, 
+section#bienfaits h2,
+section#services h2 {
+    margin-bottom: 30px;  
+}
+
+section#valeurs .box, 
+section#bienfaits .box,
+section#services .box {
+    background-color: rgba(0, 0, 0, 0.3);  
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;  
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 20px auto;  
+    display: inline-block;  
+    min-height: 250px;  
+}
+
+section#valeurs .box:hover, 
+section#bienfaits .box:hover, 
+section#services .box:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+section#valeurs .box h3,
+section#bienfaits .box h3,
+section#services .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+section#valeurs .box p, 
+section#bienfaits .box p, 
+section#services .box p {
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #f4f4f4;
+}
+
+.produits {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.produit {
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.produit img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produit p {
+    font-size: 1.1rem;
+    color: #2a9134;
+}
+
+.produit strong {
+    color: #137547;
+}
+
+/* Footer */
+footer {
+    background-color: #054a29;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    left: 180px; 
+    width: calc(100% - 180px);  
+    z-index: 10;
+}
+
+footer a {
+    color: #3fa34d;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
