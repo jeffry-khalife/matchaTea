@@ -7,133 +7,6 @@ body {
     min-height: 100vh;
   }
   
-/* Début de la sidebar*/  
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 50px;
-    background-color: #f1f1f1;
-    position:fixed;
-    height: 500%;
-    overflow: auto;
-  }
-  
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-   
-  .sidebar a.active {
-    background-color: grey;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  
-  div.content {
-    margin-left: 50px;
-    padding: 1px 16px;
-  }
-
-  div.contentbox {
-    margin-left: 50px;
-    padding: 1px 16px;
-  }
-  
-  .vertical-rl {
-     writing-mode: vertical-rl;
-     transform: rotate(180deg);
-    }
-
-/* Fin de la sidebar */
-
-/* Début du footer */ 
-  
-footer {
-  background-color: white;
-  color: black;
-  text-align: center;
-  padding: 1% 0;
-  width: 100%;
-  clear: both;
-  margin-top: auto;
-  }
-
-  
-  .footer-container {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 20px;
-  }
-  
-  /* Partie navigation */
-  .footer-nav {
-      flex: 1;
-      padding: 0 10px;
-  }
-  
-  .footer-nav h3 {
-      margin-bottom: 10px;
-  }
-  
-  .footer-nav ul {
-      list-style: none;
-  }
-  
-  .footer-nav ul li {
-      margin: 5px 0;
-  }
-  
-  .footer-nav a {
-      text-decoration: none;
-      color: black;
-      transition: color 0.3s ease;
-  }
-  
-  .footer-nav a:hover {
-      color: #f0a500;
-  }
-  
-  /* Logo Matchatea */
-  .footer-card {
-      flex: 2;
-      padding: 0 10px;
-      text-align: center;
-  }
-
-  .footer-card img {
-   height: 100%;
-   width: 50%;
-}
-  
-  .footer-card h3 {
-      margin-bottom: 10px;
-  }
-  
-  .footer-card p {
-      font-size: 14px;
-  }
-  
-  /* Partie Copyright */
-  .footer-copyright {
-      flex: 1;
-      padding: 0 10px;
-      text-align: right;
-  }
-  
-  .footer-copyright p {
-      font-size: 14px;
-  }
-
-  .footer-card button {
-     width: 20%;
-  }
- /* Fin du Footer */ 
 
  /* Début de la section Information personnelles */
   .settings-container {
@@ -336,44 +209,7 @@ footer {
    
   /* Fin du Popup */
 
-/* Début de la nav bar */
-nav {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    justify-content: space-between;
-    }
-  
-  nav a {
-    color: black;
-    text-decoration: none;
-    padding: 12px 20px;
-    margin: 0 10px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-    }
-  
-  nav img {
-    width: 50px;
-    height: 50px;
-  }
-    
-    /* Change la couleur du fond si c'est la page actuel */
-   nav a.active {
-   background-color: #027731;
-   color: white;
-   }
-  /* Change la couleur quand la souris est dessus */
-   nav a:hover {
-   background-color: #777;
-   }
 
-  /* Fin de la nav bar */
 
   /* Début de la partie equipes */
 .team {
@@ -498,20 +334,6 @@ nav {
     .content h2 {
       font-size: 3rem;
     }
-  
-    .footer {
-      padding: 2% 0;
-    }
-
-    .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 50px;
-    background-color: #f1f1f1;
-    position:fixed;
-    height: 500%;
-    overflow: auto;
-  }
 }
   
   
@@ -528,9 +350,6 @@ nav {
       font-size: 2rem;
     }
   
-    .footer {
-      padding: 1.5% 0;
-    }
   }
   
   
@@ -552,10 +371,6 @@ nav {
       font-size: 1.5rem;
     }
   
-    .footer {
-      padding: 1% 0;
-    }
-
     .team {
       justify-content: center;
   }
@@ -565,28 +380,6 @@ nav {
       margin: 15px;
   }
 
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-}
-
-  .footer-nav, .footer-card, .footer-copyright {
-    flex: none;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
- .footer-nav ul li {
-    margin: 10px 0;
-}
-
-.sidebar {
-  width: 50px;
-  }
- .sidebar a {
-  float: left;}
-  div.content {
-  margin-left: 0;}
   }
 
   .popup {
@@ -724,27 +517,7 @@ nav {
    .team-member p {
       font-size: 14px;
     }
-  
-   .sidebar a {
-     text-align: center;
-     float: none;
-    } 
-
-    .sidebar {
-      width: 50px;
-    }
-
-    .sidebar a {
-      display: block;
-      color: black;
-      padding: 15px;
-      text-decoration: none;
-    }
-
-    nav img {
-      width: 50%;
-      height: 50%;
-    }
+    
     .popup img {
       width: 80px;
       height: 120px;
