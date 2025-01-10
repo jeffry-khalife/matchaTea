@@ -6,14 +6,26 @@
 
 :root {
     --primary-color: #000000; /* Texte en noir */
-    --secondary-color: #2ecc71;
+    --secondary-color: #38a3a5;
     --font-size: 16px;
     --spacing-unit: 1rem;
     --background-color: #465362;
-    --barre-laterale-color: #9FC490;
+    --barre-laterale-color: #38a3a5;
     --link-hover-color: #007BFF;
     --footer-link-color: #007BFF;
 }
+@font-face {
+    font-family: 'Alice';
+    src: url('fonts/alice.woff2') format('woff2'),
+         url('fonts/alice.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Alice', serif;
+}
+
 
 body {
     font-size: var(--font-size);
@@ -21,14 +33,14 @@ body {
     background-image: url('image/thé.jpg');
     background-size: cover;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 nav {
-    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #80ed99;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -70,11 +82,11 @@ nav {
 /* Début de la sidebar*/  
 .sidebar {
     margin: 0;
-    top: 97px; /* Place la sidebar sous la barre de navigation */
+    top: 97px; 
     bottom: 50px;
     padding: 0;
     width: 50px;
-    background-color: #f1f1f1;
+    background-color: #38a3a5;
     position:fixed;
     height: 500%;
     overflow: auto;
@@ -196,7 +208,8 @@ nav {
 }
 
 footer {
-    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #80ed99;
     color: black;
     text-align: center;
     padding: 1% 0;
@@ -274,6 +287,7 @@ footer {
     .footer-card button {
        width: 20%;
     }
+    
     @media (min-width: 1200px) {
 
         .footer {
@@ -284,7 +298,7 @@ footer {
         margin: 0;
         padding: 0;
         width: 50px;
-        background-color: #f1f1f1;
+        background-color: #38a3a5;
         position:fixed;
         height: 500%;
         overflow: auto;
