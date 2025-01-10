@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
-    <link rel="stylesheet" href="matcha.accueil.css">
+    <title>MatchaTea</title>
+    <link rel="stylesheet" href="matcha1.css">
 </head>
-<body>
+<body class="page">
     <nav>
         <div class="nav-gauche">
-            <img src="image/panier-removebg-preview.png" alt="Icône Gauche" class="nav-icon">
+            <img src="image/panier-removebg-preview.png" alt="Icône panier" class="nav-icon">
         </div>
         <div class="nav-centre">
-            <img src="image/logo avec écriture MatchaTea (ambiance zen image de la poudre).jpg" alt="Logo du site" class="nav-icon">
+            <span class="nom-site">MatchaTea</span>
         </div>
         <div class="nav-droite">
-            <img src="image/utilisateur.png" alt="Icône Droite" class="nav-icon">
+            <img src="image/utilisateur.png" alt="Icône utilisateur" class="nav-icon">
         </div>
     </nav>
+
     <div class="conteneur">
         <div class="barre-laterale">
             <a href="#">Vente</a>
@@ -26,13 +27,44 @@
             <a href="#">Contact</a>
             <a href="#">Compte</a>
         </div>
+
         <div class="contenu">
-            <h2>Bienvenue sur la page d'accueil</h2>
-            <p>Ceci est le contenu principal de la page.</p>
+            <h2>Une tasse de thé Matcha rend tout meilleur</h2>
+
+            <section id="résumé">
+                <h3>Notre histoire</h3>
+                <p>
+                    Chez MatchaTea, nous nous spécialisons dans le thé Matcha d'origine japonaise, cultivé avec soin par des artisans experts. 
+                    Notre passion est de partager les bienfaits et la richesse de cette tradition séculaire avec le monde entier.
+                </p>
+            </section>
+
+            <section id="meilleures-ventes">
+                <h3>Meilleures ventes</h3>
+                <div class="produits">
+                    <div class="produit">
+                        <img src="image/vente1.jpg" alt="Box essentiel matcha">
+                        <p>Box Essentiel</p>
+                        <p><strong>69,99€</strong></p>
+                    </div>
+                    <div class="produit">
+                        <img src="image/vente2.jpg" alt="Sachet matcha bio">
+                        <p>Matcha Bio</p>
+                        <p><strong>29,99€</strong></p>
+                    </div>
+                    <div class="produit">
+                        <img src="image/vente3.jpg" alt="Fouet">
+                        <p>Fouet</p>
+                        <p><strong>15,99€</strong></p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+    
     <footer>
-        <p>© 2025 Mon Site - <a href="#">Lien 1</a> | <a href="#">Lien 2</a> | <a href="#">Lien 3</a></p>
+        <p><a href="#">Lien 1</a> | <a href="#">Lien 2</a> | <a href="#">Lien 3</a></p>
+        <p>&copy; 2025 Matcha Tea. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
