@@ -9,25 +9,26 @@
 </head>
 <body>
     <nav>
-        <div class="nav-gauche">
-            <img src="image/panier-removebg-preview.png" alt="Icône Gauche" class="nav-icon">
-        </div>
-        <div class="nav-centre">
-            <img src="image/logo matc.jpg" alt="Logo du site" class="nav-icon logo-icon">
-        </div>
-        <div class="nav-droite">
-            <img src="image/utilisateur.png" alt="Icône Droite" class="nav-icon utilisateur-icon">
-        </div>
+        <a href="ventes.html"><img src="https://img.icons8.com/?size=100&id=ulGWjC9dcyIM&format=png&color=000000" alt="logo thé" width="50" height="50"></a>
+        <a href="profil.html"><img src="https://img.icons8.com/?size=100&id=Z5Cz9gML8rsf&format=png&color=000000" alt="logo profile" width="50" height="50"></a>
     </nav>
 
-    <div class="conteneur">
-        <div class="barre-laterale">
-            <a href="#">Vente</a>
-            <a href="#">Histoire</a>
-            <a href="#">À propos</a>
-            <a href="#">Contact</a>
-            <a href="#">Compte</a>
+    <div class="sidebar">
+        <div class="box vertical-rl">
+          <a href="index.html">Accueil</a>
         </div>
+  		<div class="box vertical-rl">
+        	<a href="ventes.html">Vente</a>
+        </div>
+        <div class="box vertical-rl">
+  			<a href="apropos.html">A propos</a>
+        </div>
+        <div class="box vertical-rl">
+  			<a href="histoire.html">Histoire</a>
+        </div>
+        <div class="box vertical-rl">
+            <a  class="active" href="contact.html">Contact</a>
+      </div></div>
 
         <section class="products-section">
             <h2>Nos Thés Matcha</h2>
@@ -113,28 +114,31 @@
     </div>
 
     <footer>
-        <div class="footer-left">
-            <h4>Navigation</h4>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Vente</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Histoire</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="footer-container">
+            <!-- Navigation --> 
+            <div class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ventes.html">Vente</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Card -->
+            <div class="footer-card">
+                <a href="ventes.html"><img src="img/logo.jpg" alt="logo vente"></a>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; La plateforme - 2025</p>
+                <p>Magali Vacher</p>
+                <p>Anna Marras</p>
+                <p>Jeffry Khalife</p>
+            </div>
         </div>
-        <div class="footer-center">
-            <img src="image/logo matc.jpg" alt="Logo vente" style="width: 100px;">
-            <p>© 2025 La Plateforme</p>
-        </div>
-        <div class="footer-right">
-            <h4>Équipe</h4>
-            <ul>
-                <li>Magali Vacher</li>
-                <li>Anna Marras</li>
-                <li>Jeffry Khalife</li>
-            </ul>
-        </div>
-    </footer>
+      </footer>
+    
 </body>
 </html>
