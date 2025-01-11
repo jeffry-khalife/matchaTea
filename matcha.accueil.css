@@ -13,73 +13,104 @@ body {
 }
 
 nav {
-    background-color: #465362;
-    color: white;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #80ed99;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-nav .nav-gauche, nav .nav-centre, nav .nav-droite {
-    display: flex;
-    align-items: center;
-}
-
-nav .nav-centre {
-    flex: 1;
-    justify-content: center;
-}
-
-nav .nav-icon {
-    width: 40px;
-    height: 40px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1;
+    }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 20px;
     margin: 0 10px;
-}
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    }
+  nav p {
+    font-size: 1.9rem; /* Augmente la taille de la police */
+    font-family: 'Alice', serif; /* Police personnalisée */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centre le texte à l'intérieur de son conteneur */
+    flex-grow: 1; /* Permet au <p> de prendre tout l'espace entre les deux images */
+ }
 
-nav .nom-site {
-    font-size: 40px;
-    font-weight: bold;
-}
+  nav img {
+    width: 50px;
+    height: 50px;
+  }
+    
+    /* Change la couleur du fond si c'est la page actuel */
+    nav a.active {
+      background-color: #027731;
+      color: white;
+      }
+   /* Change la couleur quand la souris est dessus */
+      nav a:hover {
+      background-color: #777;
+      }
 
 .conteneur {
     display: flex;
     min-height: calc(100vh - 80px); /* Hauteur totale moins la hauteur de la nav */
 }
 
-.barre-laterale {
-    background-color: #9FC490;
-    width: 180px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    position: fixed; /* Fixé pour occuper tout l'espace visible */
-    top: 80px; /* Se positionne juste sous la nav */
-    bottom: 0; /* S'étend jusqu'en bas */
-    left: 0; /* S'aligne à gauche */
-    height: calc(100vh - 80px); /* S'assure de prendre toute la hauteur visible */
-}
-
-.barre-laterale a {
-    writing-mode: vertical-rl;
-    text-align: center;
-    transform: rotate(180deg);
-    color: #333;
+/* Début de la sidebar*/  
+.sidebar {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    top: 97px; 
+    bottom: 50px;
+    padding: 0;
+    width: 50px;
+    background-color: #38a3a5;
+    position:fixed;
+    height: 500%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
     text-decoration: none;
-    margin: 10px 0;
-    font-size: 14px;
-}
-
-.barre-laterale a:hover {
-    color: #007BFF;
-}
-
+  }
+   
+  .sidebar a.active {
+    background-color: grey;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 50px;
+    padding: 1px 16px;
+  }
+  
+  div.contentbox {
+    margin-left: 50px;
+    padding: 1px 16px;
+  }
+  
+  .vertical-rl {
+     writing-mode: vertical-rl;
+     transform: rotate(180deg);
+    }
+  
+  /* Fin de la sidebar */
+  
 .contenu {
     margin-left: 180px; /* Décalage pour la barre latérale */
     padding: 20px;
@@ -88,25 +119,64 @@ nav .nom-site {
     z-index: 5; /* Faire en sorte que le contenu soit sous le footer */
 }
 
-footer {
-    background-color: #465362;
-    color: white;
-    text-align: center;
-    padding: 30px 20px; /* Agrandir la hauteur du footer */
-    height: auto; /* Permet au footer de s'ajuster en fonction de son contenu */
-    position: fixed; /* Rester en bas de la page même lorsqu'on défile */
-    bottom: 0; /* Placer le footer en bas de la page */
-    width: calc(100% - 180px); /* Prendre toute la largeur sauf celle de la barre latérale */
-    left: 180px; /* Aligner le footer à côté de la barre latérale */
-    z-index: 10; /* Le mettre devant les autres éléments */
+.footer-nav {
+    flex: 1;
+    padding: 0 10px;
 }
 
-footer a {
-    color: #007BFF;
+.footer-nav h3 {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin: 5px 0;
+}
+
+.footer-nav a {
     text-decoration: none;
-    margin: 0 5px;
+    color: black;
+    transition: color 0.3s ease;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer-nav a:hover {
+    color: #f0a500;
+}
+
+/* Logo Matchatea */
+.footer-card {
+    flex: 2;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footer-card img {
+ height: 100%;
+ width: 50%;
+}
+
+.footer-card h3 {
+    margin-bottom: 10px;
+}
+
+.footer-card p {
+    font-size: 14px;
+}
+
+/* Partie Copyright */
+.footer-copyright {
+    flex: 1;
+    padding: 0 10px;
+    text-align: right;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+}
+
+.footer-card button {
+   width: 20%;
 }
