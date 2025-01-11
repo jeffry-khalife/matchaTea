@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(image/logo\ avec\ écriture\ MatchaTea\ \(ambiance\ zen\ image\ de\ la\ poudre\).jpg);
+    background-image: url("img/logo.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -20,9 +20,10 @@ body {
 
 /* Style pour la barre de navigation */
 nav {
-    position: relative;
-    font-family: 'Alice', serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
     background-color: #80ed99;
     display: flex;
     justify-content: space-between;
@@ -31,18 +32,17 @@ nav {
     top: 0;
     justify-content: space-between;
     z-index: 1;
-    }
+}
   
-    nav a {
-        color: black;
-        text-decoration: none;
-        padding: 12px 20px;
-        margin: 0 10px;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: background-color 0.3s ease;
-        }
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
   
 nav img {
     width: 50px;
@@ -54,16 +54,26 @@ nav a.active {
    background-color: #027731;
    color: white;
    }
+
 /* Change la couleur quand la souris est dessus */
    nav a:hover {
    background-color: #777;
    }
 
+nom-site {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-weight: 2rem;
+}
+
 .conteneur {
     display: flex;
     min-height: calc(100vh - 80px);
 }
+
 .sidebar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     margin: 0;
     top: 97px; 
     bottom: 50px;
@@ -73,39 +83,39 @@ nav a.active {
     position:fixed;
     height: 500%;
     overflow: auto;
-  }
+}
   
-  .sidebar a {
+.sidebar a {
     display: block;
     color: black;
     padding: 16px;
     text-decoration: none;
   }
    
-  .sidebar a.active {
+.sidebar a.active {
     background-color: grey;
     color: white;
   }
   
-  .sidebar a:hover:not(.active) {
+.sidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
   
-  div.content {
+div.content {
     margin-left: 50px;
     padding: 1px 16px;
   }
   
-  div.contentbox {
+div.contentbox {
     margin-left: 50px;
     padding: 1px 16px;
-  }
+}
   
-  .vertical-rl {
-     writing-mode: vertical-rl;
-     transform: rotate(180deg);
-    }
+.vertical-rl {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
 
 h1, h2, h3 {
     font-family: "Caveat";

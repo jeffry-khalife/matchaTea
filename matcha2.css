@@ -225,6 +225,7 @@ body {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
     margin: 20px;
     padding: 20px;
 }
@@ -279,7 +280,7 @@ body {
   .contentbox {
     min-height: 1vh;
     text-align: center;
-    background-image: url("img/back.jpg");
+    background-image: url("img/logo.jpg");
     background-repeat: cover;
     background-size: 100% 100%;
     padding: auto;
@@ -289,7 +290,7 @@ body {
   .contentboxadmin {
     min-height: 1vh;
     text-align: center;
-    background-image: url("img/back.jpg");
+    background-image: url("img/logo.jpg");
     background-repeat: cover;
     background-size: 100% 100%;
     padding: auto;
@@ -299,7 +300,7 @@ body {
   .content {
     min-height: 1vh;
     text-align: center;
-    background-image: url("img/back.jpg");
+    background-image: url("img/logo.jpg");
     background-repeat: cover;
     background-size: 100% 100%;
     padding: auto;
@@ -328,6 +329,7 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
   }
     
   h2 {

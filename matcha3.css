@@ -30,7 +30,7 @@ body {
 body {
     font-size: var(--font-size);
     color: var(--primary-color);
-    background-image: url('image/thé.jpg');
+    background-image: url('img/logo.jpg');
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -41,6 +41,8 @@ body {
 nav {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
     background-color: #80ed99;
     display: flex;
     justify-content: space-between;
@@ -56,14 +58,14 @@ nav {
     text-decoration: none;
     padding: 12px 20px;
     margin: 0 10px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    font-size: 2%;
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
     }
   nav p {
-    font-size: 1.9rem; /* Augmente la taille de la police */
-    font-family: 'Alice', serif; /* Police personnalisée */
+    font-size: 2rem; /* Augmente la taille de la police */
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
     margin: 0; /* Supprime les marges par défaut */
     text-align: center; /* Centre le texte à l'intérieur de son conteneur */
     flex-grow: 1; /* Permet au <p> de prendre tout l'espace entre les deux images */
@@ -95,6 +97,9 @@ p {
 
 /* Début de la sidebar*/  
 .sidebar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
     margin: 0;
     top: 97px; 
     bottom: 50px;
@@ -179,6 +184,7 @@ p {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
 }
 
 .product img {
@@ -230,6 +236,7 @@ p {
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     background-color: #80ed99;
     color: black;
     text-align: center;

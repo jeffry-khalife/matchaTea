@@ -1,5 +1,10 @@
 /* Début de la nav bar */
 nav {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
   background-color: #80ed99;
   display: flex;
   justify-content: center;
@@ -14,8 +19,8 @@ nav a {
   text-decoration: none;
   padding: 12px 20px;
   margin: 0 10px;
-  font-size: 1.1rem;
-  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
   letter-spacing: 1px;
   transition: background-color 0.3s ease;
   }
@@ -47,6 +52,8 @@ nav img {
   height: 500%;
   overflow: auto;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .sidebar a {
@@ -110,6 +117,9 @@ footer {
   
   /* Partie navigation */
   .footer-nav {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
       flex: 1;
       padding: 0 10px;
   }
