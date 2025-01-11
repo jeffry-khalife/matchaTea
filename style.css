@@ -1,6 +1,6 @@
 /* Début de la nav bar */
 nav {
-  background-color: white;
+  background-color: #80ed99;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -42,10 +42,11 @@ nav img {
   margin: 0;
   padding: 0;
   width: 50px;
-  background-color: #f1f1f1;
+  background-color: #38a3a5;
   position:fixed;
   height: 500%;
   overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidebar a {
@@ -67,12 +68,17 @@ nav img {
 
 div.content {
   margin-left: 50px;
-  padding: 1px 16px;
+  padding: 50px 16px;
 }
 
 div.contentbox {
   margin-left: 50px;
-  padding: 1px 16px;
+  padding: 50px 16px;
+}
+
+div.contentboxadmin {
+  margin-left: 50px;
+  padding: 100px 16px;
 }
 
 .vertical-rl {
@@ -85,13 +91,14 @@ div.contentbox {
 /* Début du footer */ 
   
 footer {
-  background-color: white;
+  background-color: #80ed99;
   color: black;
   text-align: center;
   padding: 1% 0;
   width: 100%;
   clear: both;
   margin-top: auto;
+  font-family: Arial, Helvetica, sans-serif;
   }
 
   
@@ -175,7 +182,7 @@ footer {
   margin: 0;
   padding: 0;
   width: 50px;
-  background-color: #f1f1f1;
+  background-color: #38a3a5;
   position:fixed;
   height: 500%;
   overflow: auto;
@@ -237,3 +244,5 @@ footer {
     height: 50%;
   }
 }
+
+
