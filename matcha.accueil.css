@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(image/thé.jpg);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #465362;
+    color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-gauche, nav .nav-centre, nav .nav-droite {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-centre {
+    flex: 1;
+    justify-content: center;
+}
+
+nav .nav-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+nav .nom-site {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.conteneur {
+    display: flex;
+    min-height: calc(100vh - 80px); /* Hauteur totale moins la hauteur de la nav */
+}
+
+.barre-laterale {
+    background-color: #9FC490;
+    width: 180px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed; /* Fixé pour occuper tout l'espace visible */
+    top: 80px; /* Se positionne juste sous la nav */
+    bottom: 0; /* S'étend jusqu'en bas */
+    left: 0; /* S'aligne à gauche */
+    height: calc(100vh - 80px); /* S'assure de prendre toute la hauteur visible */
+}
+
+.barre-laterale a {
+    writing-mode: vertical-rl;
+    text-align: center;
+    transform: rotate(180deg);
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.barre-laterale a:hover {
+    color: #007BFF;
+}
+
+.contenu {
+    margin-left: 180px; /* Décalage pour la barre latérale */
+    padding: 20px;
+    margin-bottom: 120px; /* Créer de l'espace pour le footer fixe */
+    flex: 1;
+    z-index: 5; /* Faire en sorte que le contenu soit sous le footer */
+}
+
+footer {
+    background-color: #465362;
+    color: white;
+    text-align: center;
+    padding: 30px 20px; /* Agrandir la hauteur du footer */
+    height: auto; /* Permet au footer de s'ajuster en fonction de son contenu */
+    position: fixed; /* Rester en bas de la page même lorsqu'on défile */
+    bottom: 0; /* Placer le footer en bas de la page */
+    width: calc(100% - 180px); /* Prendre toute la largeur sauf celle de la barre latérale */
+    left: 180px; /* Aligner le footer à côté de la barre latérale */
+    z-index: 10; /* Le mettre devant les autres éléments */
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
