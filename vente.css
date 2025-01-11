@@ -14,7 +14,6 @@
     --link-hover-color: #007BFF;
     --footer-link-color: #007BFF;
 }
-
 @font-face {
     font-family: 'Alice';
     src: url('fonts/alice.woff2') format('woff2'),
@@ -63,11 +62,11 @@ nav {
     transition: background-color 0.3s ease;
     }
   nav p {
-    font-size: 1.9rem; 
-    font-family: 'Alice', serif;
-    margin: 0; 
-    text-align: center; 
-    flex-grow: 1;
+    font-size: 1.9rem; /* Augmente la taille de la police */
+    font-family: 'Alice', serif; /* Police personnalisée */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centre le texte à l'intérieur de son conteneur */
+    flex-grow: 1; /* Permet au <p> de prendre tout l'espace entre les deux images */
  }
 
   nav img {
@@ -400,10 +399,6 @@ footer {
   }
 
   nav img {
-    width: 50%;
-    height: 50%;
-  }
-}
     width: 50%;
     height: 50%;
   }
