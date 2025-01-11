@@ -167,14 +167,14 @@ section#services .box:hover {
 section#valeurs .box h3,
 section#bienfaits .box h3,
 section#services .box h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
 section#valeurs .box p, 
 section#bienfaits .box p, 
 section#services .box p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
 }
