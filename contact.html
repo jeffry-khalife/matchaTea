@@ -4,28 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matcha2.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fansite2.css">
-    <link rel="stylesheet" href="topnav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+
     <title>MatchaTea</title>
 </head>
 
 
-<!-- Header 
-<header>
-    
-    <h1>Ac Milan</h1>
-    
-</header> -->
+
+
+
 <body>
+
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="ventes.html">Vente</a>
-        <a href="apropos.html">A propos</a>
-        <a href="histoire.html">Histoire</a>
-        <a href="contact.html">Contact</a>
+        <a href="ventes.html"><img src="img/panier-removebg-preview.png" alt="logo thé" width="50" height="50"></a>
+        <a style="font-family:alice">MatchaTea</a>
+        <a href="profil.html"><img src="img/utilisateur.png" alt="logo profile" width="50" height="50"></a>
     </nav>
 
+    <div class="sidebar">
+        <div class="box vertical-rl">
+          <a href="index.html">Accueil</a>
+        </div>
+  		<div class="box vertical-rl">
+        	<a href="ventes.html">Vente</a>
+        </div>
+        <div class="box vertical-rl">
+  			<a href="apropos.html">A propos</a>
+        </div>
+        <div class="box vertical-rl">
+  			<a href="histoire.html">Histoire</a>
+        </div>
+        <div class="box vertical-rl">
+            <a  class="active" href="contact.html">Contact</a>
+      </div>
+    </div>
     <!-- Main Content Section -->
     <div class="content">
         <div class="contact-form">
@@ -49,21 +69,37 @@
                 <div class="form-row">
                     <textarea placeholder="Message" required></textarea>
                 </div>
-                <!--<button type="submit">Submit</button>-->
+                <button type="submit">Valider</button>
             </form>
         </div>
+        
     
 </div>
-
-    <footer>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="ventes.html">Vente</a>
-            <a href="apropos.html">A propos</a>
-            <a href="histoire.html">Histoire</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </footer>
-
+<footer>
+    <div class="footer-container">
+        <!-- Navigation --> 
+        <div class="footer-nav">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="ventes.html">Vente</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Card -->
+        <div class="footer-card">
+            <a href="ventes.html"><img src="img/logo.jpg" alt="logo vente"></a>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; La plateforme - 2025</p>
+            <p>Magali Vacher</p>
+            <p>Anna Marras</p>
+            <p>Jeffry Khalife</p>
+        </div>
+    </div>
+  </footer>
 </body>
 </html>
