@@ -29,6 +29,7 @@ nav {
     position: sticky;
     top: 0;
     justify-content: space-between;
+    z-index: 1;
     }
   
 nav a {
